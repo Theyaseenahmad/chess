@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "postcss public/styles/tailwind.css -o public/styles/output.css",
     "watch:css": "postcss public/styles/tailwind.css -o public/styles/output.css --watch",
-    "start": "node app.js"
+    "start": "node app"
   },
   "keywords": [],
   "author": "",
