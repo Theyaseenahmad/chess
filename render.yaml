@@ -1,0 +1,10 @@
+services:
+  - name: chess-app
+    type: web
+    runtime: node
+    repo: https://github.com/Theyaseenahmad/chess
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+    buildCommand: npm install
+    startCommand: node app.js
