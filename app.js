@@ -94,6 +94,6 @@ app.get("/play", (req, res) => {
   res.render("index", { title: "Chess" });
 });
 
-server.listen(8080, () => {
+server.listen(process.env.PORT || 8080, () => {
   console.log("Listening on port 3000");
 });
