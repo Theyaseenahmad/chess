@@ -1,0 +1,17 @@
+const getPieceUnicode= (piece)=>{
+  const PieceUnicode =  {
+    'k': '♔',
+    'q': '♕',
+    'r': '♖',
+    'b': '♗',
+    'n': '♘',
+    'p': '♙',
+    'K': '♚',
+    'Q': '♛',
+    'R': '♜',
+    'B': '♝',
+    'N': '♞',
+    'P': '♟︎',
+  }
+  return PieceUnicode[piece.type];
+}

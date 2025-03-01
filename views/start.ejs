@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Play Chess Online</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      background: url('https://images.pexels.com/photos/6114992/pexels-photo-6114992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+    }
+    /* Fade-in animation for the card */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-black bg-opacity-60 flex items-center justify-center relative">
+  <!-- Glassmorphism Card -->
+  <div class="relative z-10 flex w-[80%] flex-col items-center text-center px-2 md:px-10 py-14 backdrop-blur-xl bg-white/10 rounded-2xl shadow-2xl border border-white/20 max-w-md animate-fadeInUp">
+    <h1 class="text-6xl font-extrabold tracking-tight bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-transparent bg-clip-text uppercase drop-shadow-xl">
+      Play Chess
+    </h1>
+    <p class="mt-4 text-lg text-gray-100">
+      Challenge your friends, master strategies, and dominate the board.
+    </p>
+    <a href="/play" class="mt-8 inline-block px-12 py-4 text-xl font-semibold text-gray-900 bg-yellow-400 rounded-full shadow-xl hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105">
+      Play Now
+    </a>
+  </div>
+
+  <!-- Optional Footer -->
+  <footer class="absolute bottom-4 w-full text-center text-gray-200 text-sm">
+    &copy; 2025 Play Chess. All rights reserved.
+  </footer>
+</body>
+</html>
