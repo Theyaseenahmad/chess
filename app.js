@@ -94,6 +94,14 @@ app.get("/play", (req, res) => {
   res.render("index", { title: "Chess" });
 });
 
+app.get('/health', async(req, res) => {
+  try {
+    res.status(200).json({ status: "ok", redis: "connected" });
+  } catch (err) {
+    res.status(500).json({ status: "error", redis: "disconnected" });
+  }
+  });
+
 server.listen(process.env.PORT || 8080, () => {
   console.log("Listening on port 3000");
 });
